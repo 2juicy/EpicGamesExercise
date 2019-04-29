@@ -1,22 +1,25 @@
 import React from "react";
-import "./style.css";
 
-export default function Intro() {
+export default function Intro(props) {
+  console.log(props.image.header[0].backgroundImage);
   return (
-    <header className="toolbar">
-      <nav className="navbar">
-        <div>1st Div</div>
-        <div className="logo">
-          <a href="/landing">Logo</a>
-        </div>
-        <div className="navitems">
-          <ul>
-            <li>
-              <a href="/">Homepage</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    <div
+      className="intro"
+      style={{
+        position: "absolute",
+        width: "100%",
+        marginLeft: "5%",
+        background: `url(images/assets/${
+          props.image.header[0].backgroundImage
+        })`
+      }}
+    >
+      <img
+        alt="Logo"
+        src={`images/assets/${props.image.header[0].logo}`}
+        style={{ display: "block", margin: "auto" }}
+      />
+      <h1>Intro component</h1>
+    </div>
   );
 }

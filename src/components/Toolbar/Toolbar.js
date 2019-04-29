@@ -4,8 +4,7 @@ import "./style.css";
 export default function Toolbar() {
   return (
     <header className="toolbar">
-      <nav className="navbar">
-        <div>1st Div</div>
+      <nav className="navigation">
         <div className="logo">
           <a href="/landing">Logo</a>
         </div>
@@ -16,6 +15,8 @@ export default function Toolbar() {
             </li>
           </ul>
         </div>
+
+        <div className="scroll-text">PAINT YOUR PICTURE</div>
       </nav>
     </header>
   );
