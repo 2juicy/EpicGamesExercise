@@ -1,0 +1,9 @@
+.toolbar {
+  width: 5%;
+  height: 100%;
+  position: fixed;
+  background-color: #16161d;
+  color: white;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+}
