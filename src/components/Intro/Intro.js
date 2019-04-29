@@ -1,25 +1,27 @@
 import React from "react";
+import "./Intro.css";
 
 export default function Intro(props) {
-  console.log(props.image.header[0].backgroundImage);
+  console.log(props);
   return (
     <div
-      className="intro"
       style={{
-        position: "absolute",
-        width: "100%",
-        marginLeft: "5%",
-        background: `url(images/assets/${
-          props.image.header[0].backgroundImage
-        })`
+        backgroundImage: `url(images/assets/${props.image.backgroundImage})`
       }}
+      className="intro"
     >
       <img
+        className="intro-logo"
         alt="Logo"
-        src={`images/assets/${props.image.header[0].logo}`}
-        style={{ display: "block", margin: "auto" }}
+        src={`images/assets/${props.image.logo}`}
       />
-      <h1>Intro component</h1>
+      <div className="intro-text">
+        <h3>{props.image.title}</h3>
+        <p>{props.image.description.text}</p>
+      </div>
+      <div className="date">
+        <p>April 20th 2016</p>
+      </div>
     </div>
   );
 }

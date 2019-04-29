@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import design from "../../images/Design.jpg";
-import logo from "../../images/EGLogo.png";
 import "../../App.sass";
 
 export default function Home() {
@@ -10,7 +8,11 @@ export default function Home() {
   return (
     <div>
       <div className="App-header text-center">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img
+          src={process.env.PUBLIC_URL + "images/EGLogo.png"}
+          className="App-logo"
+          alt="logo"
+        />
         <h2>Front End Web Developer Test</h2>
       </div>
       <div className="home-view container">
@@ -74,13 +76,13 @@ export default function Home() {
           </div>
           <div className="col-md-4 design">
             <a
-              href={design}
+              href={process.env.PUBLIC_URL + "images/Design.jpg"}
               target="_blank"
               title="See Full Image"
               rel="noopener noreferrer"
             >
               <img
-                src={design}
+                src={process.env.PUBLIC_URL + "images/Design.jpg"}
                 alt="designToFollow"
                 className="img-responsive"
               />

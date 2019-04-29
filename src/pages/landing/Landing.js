@@ -4,11 +4,12 @@ import Toolbar from "../../components/Toolbar/Toolbar";
 import Intro from "../../components/Intro/Intro";
 
 export default function Landing() {
-  console.log(content);
+  console.log(content.intro);
   return (
     <div>
-      <Intro image={content.intro} />
       <Toolbar />
+      <Intro image={content.intro.header[0]} />
+      <h1>blah blah blah</h1>
     </div>
   );
 }
