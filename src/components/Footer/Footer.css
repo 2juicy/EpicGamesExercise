@@ -1,0 +1,15 @@
+#footer {
+  width: 100%;
+  display: flex;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+ul > h4 {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #367588;
+}

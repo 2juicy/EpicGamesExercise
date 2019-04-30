@@ -4,6 +4,7 @@ import Scroll from "../../components/Scroll/Scroll";
 import Intro from "../../components/Intro/Intro";
 import Slider from "../../components/Slider/Slider";
 import Paragraph from "../../components/Paragraph/Paragraph";
+import Footer from "../../components/Footer/Footer";
 import "./Landing.css";
 
 export default function Landing() {
@@ -38,7 +39,7 @@ export default function Landing() {
       <Slider image={content.slider1} />
       <Paragraph paragraph={content.slider1} />
       <Slider image={content.slider2} />
-      <footer id="footer" />
+      <Footer footer={content.footer.options} />
     </div>
   );
 }
