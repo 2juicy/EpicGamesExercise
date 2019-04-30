@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { slide as Menu } from "react-burger-menu";
 import "./Scroll.css";
 
@@ -26,7 +25,3 @@ export default function Scroll({ height }) {
     </React.Fragment>
   );
 }
-
-Scroll.propTypes = {
-  handleClick: PropTypes.number.isRequired
-};

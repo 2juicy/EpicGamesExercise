@@ -9,12 +9,12 @@ export default function Landing() {
     Math.max(document.documentElement.clientHeight)
   );
   useEffect(() => {
-    const resizeListener = window.addEventListener(
-      "resize",
-      setHeight(Math.max(document.documentElement.clientHeight))
-    );
+    const resizeListener = window.addEventListener("resize", resizeLanding);
     return () => window.removeEventListener("resize", resizeListener);
   });
+
+  const resizeLanding = () =>
+    setHeight(Math.max(document.documentElement.clientHeight));
 
   return (
     <div className="landing">
