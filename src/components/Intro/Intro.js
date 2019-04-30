@@ -2,7 +2,6 @@ import React from "react";
 import "./Intro.css";
 
 export default function Intro(props) {
-  console.log(props);
   return (
     <div
       style={{
