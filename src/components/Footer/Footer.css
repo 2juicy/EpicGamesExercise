@@ -16,7 +16,7 @@
   width: 25%;
 }
 
-ul {
+.li-no-style {
   padding-inline-start: 10%;
   list-style: none;
   text-transform: capitalize;

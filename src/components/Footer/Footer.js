@@ -9,7 +9,7 @@ function Footer({ footer, copyright }) {
           <h4>{footer[0].id}</h4>
           <li>{footer[0].text[0].description}</li>
         </ul>
-        <ul>
+        <ul className="li-no-style">
           <h4>{footer[1].id}</h4>
           {footer[1].text.map(text => (
             <React.Fragment key={text.id}>
@@ -18,7 +18,7 @@ function Footer({ footer, copyright }) {
             </React.Fragment>
           ))}
         </ul>
-        <ul>
+        <ul className="li-no-style">
           <h4>{footer[2].id}</h4>
           {footer[2].text.map(text => (
             <React.Fragment key={text.id}>
