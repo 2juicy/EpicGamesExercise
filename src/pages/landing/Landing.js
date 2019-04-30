@@ -3,6 +3,7 @@ import content from "../../content.json";
 import Scroll from "../../components/Scroll/Scroll";
 import Intro from "../../components/Intro/Intro";
 import Slider from "../../components/Slider/Slider";
+import Paragraph from "../../components/Paragraph/Paragraph";
 import "./Landing.css";
 
 export default function Landing() {
@@ -35,6 +36,7 @@ export default function Landing() {
       <Scroll height={height} />
       <Intro image={content.intro.header[0]} height={height} />
       <Slider image={content.slider1} />
+      <Paragraph paragraph={content.slider1} />
     </div>
   );
 }

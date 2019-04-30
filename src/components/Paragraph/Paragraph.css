@@ -1,0 +1,28 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.paragraph-section {
+  position: relative;
+  margin: 0;
+  width: 5%;
+}
+
+.sideways {
+  color: white;
+  height: 150px;
+  position: absolute;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+}
+
+.paragraphs {
+  color: white;
+  column-count: 2;
+  column-gap: 4em;
+  margin: 0 15% 0 15%;
+}
