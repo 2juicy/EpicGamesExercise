@@ -5,9 +5,14 @@
   position: relative;
 }
 
+.scroll-text {
+  transition: opacity 1s ease-in;
+  -moz-transition: opacity 1s ease-in;
+  -webkit-transition: opacity 1s ease-in;
+}
+
 .scroll-text p,
 .scroll-text a {
-  transition: top 0.3s;
   color: white;
   writing-mode: vertical-lr;
   text-orientation: mixed;

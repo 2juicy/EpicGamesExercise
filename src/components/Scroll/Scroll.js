@@ -3,7 +3,7 @@ import { slide as Menu } from "react-burger-menu";
 import "./Scroll.css";
 
 export default function Scroll({ height }) {
-  const [visible, setVisible] = useState("visible");
+  const [opacity, setOpacity] = useState(1);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -12,8 +12,8 @@ export default function Scroll({ height }) {
 
   function handleScroll() {
     if (window.pageYOffset > 0) {
-      setVisible("hidden");
-    } else setVisible("visible");
+      setOpacity(0);
+    } else setOpacity(1);
   }
 
   return (
@@ -30,7 +30,7 @@ export default function Scroll({ height }) {
         </a>
       </Menu>
       <div className="scrollbar" style={{ height }}>
-        <div className="scroll-text" style={{ visibility: visible }}>
+        <div className="scroll-text" style={{ opacity }}>
           <p>PAINT YOUR PICTURE</p>
           <a
             href="#footer"
