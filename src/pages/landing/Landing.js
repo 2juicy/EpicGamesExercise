@@ -39,7 +39,10 @@ export default function Landing() {
       <Slider image={content.slider1} />
       <Paragraph paragraph={content.slider1} />
       <Slider image={content.slider2} />
-      <Footer footer={content.footer.options} />
+      <Footer
+        footer={content.footer.options}
+        copyright={content.footer.copyright}
+      />
     </div>
   );
 }

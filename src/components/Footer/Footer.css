@@ -4,12 +4,28 @@
   color: white;
 }
 
-ul {
-  list-style: none;
-}
-
-ul > h4 {
+#footer h4 {
   font-size: 14px;
   text-transform: uppercase;
   color: #367588;
+}
+
+.aboutme {
+  padding: 0;
+  margin-left: 10%;
+  width: 25%;
+}
+
+ul {
+  padding-inline-start: 10%;
+  list-style: none;
+  text-transform: capitalize;
+  font-size: 12px;
+}
+
+#copyright {
+  color: rgb(139, 0, 139);
+  font-size: 8px;
+  text-align: center;
+  padding-bottom: 20px;
 }
