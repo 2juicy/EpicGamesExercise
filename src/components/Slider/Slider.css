@@ -23,13 +23,13 @@
   display: inline-grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 5px;
+  margin-bottom: 50px;
 }
 
 .slider {
   display: flex;
   flex-direction: column;
   background-color: white;
-  margin-bottom: 50px;
 }
 
 .cut-image {
@@ -84,7 +84,7 @@
 
 @media (max-width: 1023px) {
   .sliders {
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .slider-description h2 {
