@@ -19,7 +19,14 @@ export default function Scroll({ height }) {
       <div className="scrollbar" style={{ height }}>
         <div className="scroll-text">
           <p>PAINT YOUR PICTURE</p>
-          <a href="#footer" class="glyphicon glyphicon-chevron-up" />
+          <a
+            href="#footer"
+            target="_blank"
+            title="To Footer"
+            rel="noopener noreferrer"
+          >
+            <span class="glyphicon glyphicon-chevron-up" />
+          </a>
         </div>
       </div>
     </React.Fragment>
