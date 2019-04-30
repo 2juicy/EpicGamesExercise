@@ -20,7 +20,7 @@ export default function Intro(props) {
         <p>{props.image.description.text}</p>
       </div>
       <div className="date">
-        <p>April 20th 2016</p>
+        <p>April 29th 2019</p>
       </div>
     </div>
   );
