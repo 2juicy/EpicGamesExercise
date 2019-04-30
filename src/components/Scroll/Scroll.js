@@ -5,13 +5,14 @@ import "./Scroll.css";
 export default function Scroll({ height }) {
   const [opacity, setOpacity] = useState(1);
 
+  // Scroll waypoints to hide elements and animations. Could add more later
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   function handleScroll() {
-    if (window.pageYOffset > 0) {
+    if (window.pageYOffset > 1) {
       setOpacity(0);
     } else setOpacity(1);
   }
