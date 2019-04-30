@@ -20,6 +20,9 @@
   transform: translateX(-50%) rotate(180deg);
 }
 
+.sideways span {
+  color: darkblue;
+}
 .paragraphs {
   color: white;
   column-count: 2;
