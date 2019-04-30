@@ -3,17 +3,17 @@ import "./Slider.css";
 
 export default function Slider(props) {
   return (
-    <div className="slider-wheel">
+    <div className="slider-wrapper">
       <h4>
         <span class="glyphicon glyphicon-menu-left" />
         <span class="glyphicon glyphicon-menu-right" />
         <span className="slider-title">{props.image.navText}</span>
       </h4>
 
-      <div className="slider-items">
+      <div className="sliders">
         {props.image.slides.map(slide => (
-          <div className="sliders">
-            <div className="img-container">
+          <div className="slider">
+            <div className="image-container">
               <div className="cut-image">
                 <img
                   className="slider-image"
@@ -21,10 +21,12 @@ export default function Slider(props) {
                   alt={slide.title}
                   src={`images/assets/${slide.image}`}
                 />
+                <div className="cut-img-text">❤︎ 382</div>
               </div>
-              <div className="slider-img-text">❤︎ 382</div>
             </div>
-            <div>content</div>
+            <div className="slider-description">
+              <h2>{slide.title}</h2>
+            </div>
           </div>
         ))}
       </div>
