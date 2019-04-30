@@ -12,18 +12,19 @@ export default function Slider(props) {
 
       <div className="slider-items">
         {props.image.slides.map(slide => (
-          <div className="img-container">
-            <div className="cut-image">
-              <img
-                className="slider-image"
-                id={slide.id}
-                alt={slide.title}
-                src={`images/assets/${slide.image}`}
-              />
+          <div className="sliders">
+            <div className="img-container">
+              <div className="cut-image">
+                <img
+                  className="slider-image"
+                  id={slide.id}
+                  alt={slide.title}
+                  src={`images/assets/${slide.image}`}
+                />
+              </div>
+              <div className="slider-img-text">❤︎ 382</div>
             </div>
-            <div className="slider-img-text">
-              <span class="glyphicon glyphicon-heart" /> 382
-            </div>
+            <div>content</div>
           </div>
         ))}
       </div>

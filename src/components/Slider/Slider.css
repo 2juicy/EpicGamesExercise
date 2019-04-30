@@ -9,8 +9,12 @@
   padding-left: 3%;
 }
 
+.sliders {
+  position: relative;
+}
+
 .glyphicon {
-  font-size: 24px;
+  font-size: 12px;
 }
 
 .slider-wheel h4 {
@@ -30,6 +34,7 @@
   margin-top: 3%;
   display: inline-grid;
   grid-template-columns: auto auto auto auto;
+  grid-gap: 5px;
 }
 
 .cut-image {
@@ -53,17 +58,14 @@
 }
 
 .slider-items img {
-  width: 95%;
+  width: 100%;
   opacity: 0.65;
 }
 
-.img-container {
-  position: relative;
-}
 .slider-img-text {
   position: absolute;
-  right: 25px;
-  bottom: 8px;
+  right: 5%;
+  bottom: 15%;
 }
 
 @media (max-width: 1023px) {
