@@ -12,11 +12,8 @@ export default function Paragraph({ paragraph }) {
       <div className="paragraphs">
         {/* if paragraphs were in an array, we can map it here */}
         <div className="paragraph">{paragraph.para2}</div>
-        <br />
         <div className="paragraph">{paragraph.para1}</div>
-        <br />
         <div className="paragraph">{paragraph.para2}</div>
-        <br />
         <div className="paragraph">{paragraph.para2}</div>
       </div>
     </div>
