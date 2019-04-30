@@ -33,7 +33,6 @@ export default function Landing() {
       )}
       <Scroll height={height} />
       <Intro image={content.intro.header[0]} height={height} />
-      <h1>blah blah blah</h1>
     </div>
   );
 }
