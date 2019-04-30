@@ -5,7 +5,17 @@ import Bliss from "./pages/bliss/Bliss";
 import { Switch, Route } from "react-router";
 
 class App extends Component {
+  state = {
+    loading: true
+  };
+
+  componentDidMount() {
+    this.setState({ loading: false });
+  }
+
   render() {
+    if (this.loading) return null;
+
     return (
       <div className="App">
         <div className="app-container">
