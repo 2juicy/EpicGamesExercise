@@ -10,17 +10,17 @@
   color: #367588;
 }
 
-.aboutme {
-  padding: 0;
-  margin-left: 10%;
-  width: 25%;
-}
-
 .li-no-style {
   padding-inline-start: 10%;
   list-style: none;
   text-transform: capitalize;
   font-size: 12px;
+}
+
+.aboutme {
+  padding: 0;
+  margin-left: 10%;
+  width: 25%;
 }
 
 #copyright {

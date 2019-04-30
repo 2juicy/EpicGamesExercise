@@ -5,7 +5,7 @@ function Footer({ footer, copyright }) {
   return (
     <React.Fragment>
       <div id="footer">
-        <ul className="aboutme">
+        <ul className="li-no-style aboutme">
           <h4>{footer[0].id}</h4>
           <li>{footer[0].text[0].description}</li>
         </ul>
