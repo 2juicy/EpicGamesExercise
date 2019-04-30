@@ -37,6 +37,7 @@ export default function Landing() {
       <Intro image={content.intro.header[0]} height={height} />
       <Slider image={content.slider1} />
       <Paragraph paragraph={content.slider1} />
+      <Slider image={content.slider2} />
     </div>
   );
 }
