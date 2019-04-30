@@ -3,11 +3,11 @@
   width: 5%;
   float: left;
   position: relative;
-  color: white;
 }
 
 .scroll-text p,
-.scroll-text span {
+.scroll-text a {
+  color: white;
   writing-mode: vertical-lr;
   text-orientation: mixed;
   position: absolute;
@@ -20,4 +20,10 @@
 
 .scroll-text p::before {
   content: "\00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 ";
+}
+
+@media (max-width: 1024px) {
+  .scrollbar {
+    width: 50px;
+  }
 }
