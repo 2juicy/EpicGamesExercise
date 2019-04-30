@@ -11,17 +11,21 @@ export default function Slider(props) {
       </h4>
 
       <div className="slider-items">
-        <img
-          className="slider-image"
-          alt="Image1"
-          src={`images/assets/${props.image.slides[0].image}`}
-        />
-
-        <img
-          className="slider-image"
-          alt="Image1"
-          src={`images/assets/${props.image.logo}`}
-        />
+        {props.image.slides.map(slide => (
+          <div className="img-container">
+            <div className="cut-image">
+              <img
+                className="slider-image"
+                id={slide.id}
+                alt={slide.title}
+                src={`images/assets/${slide.image}`}
+              />
+            </div>
+            <div className="slider-img-text">
+              <span class="glyphicon glyphicon-heart" /> 382
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );
