@@ -64,7 +64,7 @@
 }
 
 @media (max-width: 1023px) {
-  .slider-items {
+  .sliders {
     grid-template-columns: auto auto;
   }
 }
