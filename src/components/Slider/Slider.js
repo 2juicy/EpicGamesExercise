@@ -12,11 +12,10 @@ export default function Slider(props) {
 
       <div className="sliders">
         {props.image.slides.map(slide => (
-          <div className="slider">
+          <div className="slider" key={slide.id}>
             <div className="cut-image">
               <img
                 className="slider-image"
-                id={slide.id}
                 alt={slide.title}
                 src={`images/assets/${slide.image}`}
               />
