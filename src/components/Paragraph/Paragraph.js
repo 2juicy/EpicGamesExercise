@@ -14,6 +14,8 @@ export default function Paragraph({ paragraph }) {
         <div className="paragraph">{paragraph.para1}</div>
         <br />
         <div className="paragraph">{paragraph.para2}</div>
+        <br />
+        <div className="paragraph">{paragraph.para2}</div>
       </div>
     </div>
   );

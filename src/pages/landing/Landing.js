@@ -38,6 +38,7 @@ export default function Landing() {
       <Slider image={content.slider1} />
       <Paragraph paragraph={content.slider1} />
       <Slider image={content.slider2} />
+      <footer id="footer" />
     </div>
   );
 }

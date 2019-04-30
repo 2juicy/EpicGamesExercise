@@ -33,14 +33,14 @@ export default function Scroll({ height }) {
       <div className="scrollbar" style={{ height }}>
         <div className="scroll-text" style={{ opacity }}>
           <p>PAINT YOUR PICTURE</p>
-          <a
-            href="#footer"
-            target="_blank"
-            title="To Footer"
-            rel="noopener noreferrer"
-          >
-            <span class="glyphicon glyphicon-chevron-up" />
-          </a>
+          <span
+            class="glyphicon glyphicon-chevron-up"
+            onClick={() =>
+              document
+                .getElementById("footer")
+                .scrollIntoView({ behavior: "smooth" })
+            }
+          />
         </div>
       </div>
     </React.Fragment>

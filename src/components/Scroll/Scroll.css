@@ -12,7 +12,7 @@
 }
 
 .scroll-text p,
-.scroll-text a {
+.scroll-text span {
   color: white;
   writing-mode: vertical-lr;
   text-orientation: mixed;
