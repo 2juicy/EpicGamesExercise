@@ -26,7 +26,7 @@ export default function Slider(props) {
             <div className="slider-description">
               <h2>{slide.title}</h2>
               <p>{slide.description}</p>
-
+              <br />
               <p>
                 <span class="glyphicon glyphicon-comment" />
                 <span> 374 Comments</span>
