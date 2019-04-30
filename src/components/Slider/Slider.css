@@ -86,4 +86,12 @@
   .sliders {
     grid-template-columns: auto auto;
   }
+
+  .slider-description h2 {
+    font-size: 14px;
+  }
+
+  .slider-description p {
+    font-size: 10px;
+  }
 }
