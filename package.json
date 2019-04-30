@@ -2,6 +2,7 @@
   "name": "epic-web-test",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://2juicy.github.io/EpicGamesExercise",
   "dependencies": {
     "autoprefixer": "^7.1.2",
     "babel-core": "6.25.0",
@@ -55,7 +56,10 @@
     "start": "npm run start-dev",
     "start-dev": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "eject": "react-scripts eject"
   },
   "proxy": {
     "/accounts": {
