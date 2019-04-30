@@ -1,0 +1,23 @@
+.scrollbar {
+  z-index: 1;
+  width: 5%;
+  float: left;
+  position: relative;
+  color: white;
+}
+
+.scroll-text p,
+.scroll-text span {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.scroll-text p::before {
+  content: "\00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 ";
+}
