@@ -1,4 +1,33 @@
-.slider {
+.slider-wheel {
+  color: white;
   position: relative;
-  margin: 0 0 5% 5%;
+  margin: 0 0 0 5%;
+  padding-bottom: 5%;
+}
+
+.slider-title {
+  padding-left: 3%;
+}
+
+.glyphicon {
+  font-size: 24px;
+}
+
+.slider-wheel h4 {
+  font-size: 20px;
+  margin: 0;
+  padding: 0 0 0 3%;
+}
+
+.slider-wheel span {
+  vertical-align: middle;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.slider-items {
+  margin-top: 3%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
 }

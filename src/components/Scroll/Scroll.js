@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { slide as Menu } from "react-burger-menu";
 import "./Scroll.css";
 
 export default function Scroll({ height }) {
+  const [visible, setVisible] = useState("visible");
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  function handleScroll() {
+    if (window.pageYOffset > 0) {
+      setVisible("hidden");
+    } else setVisible("visible");
+  }
+
   return (
     <React.Fragment>
       <Menu>
@@ -17,7 +30,7 @@ export default function Scroll({ height }) {
         </a>
       </Menu>
       <div className="scrollbar" style={{ height }}>
-        <div className="scroll-text">
+        <div className="scroll-text" style={{ visibility: visible }}>
           <p>PAINT YOUR PICTURE</p>
           <a
             href="#footer"

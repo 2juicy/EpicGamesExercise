@@ -34,7 +34,7 @@ export default function Landing() {
       )}
       <Scroll height={height} />
       <Intro image={content.intro.header[0]} height={height} />
-      <Slider />
+      <Slider image={content.slider1} />
     </div>
   );
 }
