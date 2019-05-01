@@ -1,5 +1,11 @@
 .article {
   color: white;
+  position: relative;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  text-shadow: -0.5px 0 black, 0 0.5px black, 0.5px 0 black, 0 -0.5px black;
+  border: rgba(51, 27, 58) 0.5px ridge;
 }
 
 .article,
@@ -9,11 +15,15 @@
 
 .article-text {
   width: 35%;
+  position: absolute;
+  width: 30%;
+  bottom: 5%;
+  left: 5%;
 }
 
 .article-text h3 {
   font-weight: bold;
-  font-size: 32px;
+  font-size: 36px;
 }
 
 .article-paragraph {
@@ -28,4 +38,11 @@
 }
 .article-paragraph p {
   margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .article,
+  .article-paragraph {
+    margin-left: 50px;
+  }
 }

@@ -26,7 +26,7 @@ export default function Bliss() {
   return (
     <div className="bliss">
       <Scroll height={height} />
-      <Article height={height} />
+      <Article height={height * 0.85} />
       <Signature signature={content.signature[0]} height={height} />
       <Footer
         footer={content.footer.options}
