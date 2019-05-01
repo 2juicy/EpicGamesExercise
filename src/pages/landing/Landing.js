@@ -8,6 +8,10 @@ import Footer from "../../components/Footer/Footer";
 import "./Landing.css";
 
 export default function Landing() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [height, setHeight] = useState(
     Math.max(document.documentElement.clientHeight)
   );
