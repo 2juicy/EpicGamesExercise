@@ -6,7 +6,7 @@ import "./Navbar.css";
 export default function Navbar({ height }) {
   const [opacity, setOpacity] = useState(1);
 
-  // Scroll waypoints to hide elements and animations.
+  // Scroll waypoints to hide elements
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
