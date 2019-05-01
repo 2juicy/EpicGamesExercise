@@ -6,7 +6,7 @@ export default function Home() {
   //add a link to your page.
   const link = "/landing";
   return (
-    <div>
+    <div className="page">
       <div className="App-header text-center">
         <img
           src={process.env.PUBLIC_URL + "images/EGLogo.png"}

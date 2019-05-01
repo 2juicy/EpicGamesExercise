@@ -23,7 +23,7 @@ export default function Subpage() {
     setHeight(Math.max(document.documentElement.clientHeight));
 
   return (
-    <div className="subpage">
+    <div className="subpage page">
       <Navbar height={height} />
       <Article height={height * 0.85} />
       <Signature signature={content.signature[0]} height={height} />

@@ -27,7 +27,7 @@ export default function Landing() {
     setHeight(Math.max(document.documentElement.clientHeight));
 
   return (
-    <div className="landing">
+    <div className="landing page">
       <Navbar height={height} />
       <Intro image={content.intro.header[0]} height={height} />
       <Slider image={content.slider1} />
