@@ -5,7 +5,7 @@ export default function Signature({ signature }) {
   return (
     <div
       style={{
-        backgroundImage: `url(images/assets/${signature.backgroundImage})`
+        backgroundImage: `url(/images/assets/${signature.backgroundImage})`
       }}
       className="signature"
     >

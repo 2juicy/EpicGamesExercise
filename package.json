@@ -2,8 +2,10 @@
   "name": "epic-web-test",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://2juicy.github.io/EpicGamesExercise",
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "gh-pages": "^2.0.1",
     "react": "^16.8.6",
     "react-burger-menu": "^2.6.10",
     "react-dom": "^16.8.6",

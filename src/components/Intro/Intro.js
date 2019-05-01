@@ -5,7 +5,7 @@ export default function Intro(props) {
   return (
     <div
       style={{
-        backgroundImage: `url(images/assets/${props.image.backgroundImage})`,
+        backgroundImage: `url(/images/assets/${props.image.backgroundImage})`,
         height: props.height
       }}
       className="intro"
@@ -13,7 +13,7 @@ export default function Intro(props) {
       <img
         className="intro-logo"
         alt="Logo"
-        src={`images/assets/${props.image.logo}`}
+        src={`/images/assets/${props.image.logo}`}
       />
       <div className="intro-text">
         <h3>{props.image.title}</h3>

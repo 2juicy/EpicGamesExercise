@@ -9,7 +9,7 @@ export default function Home() {
     <div className="page">
       <div className="App-header text-center">
         <img
-          src={process.env.PUBLIC_URL + "images/EGLogo.png"}
+          src={process.env.PUBLIC_URL + "/images/EGLogo.png"}
           className="App-logo"
           alt="logo"
         />
@@ -76,13 +76,13 @@ export default function Home() {
           </div>
           <div className="col-md-4 design">
             <a
-              href={process.env.PUBLIC_URL + "images/Design.jpg"}
+              href={process.env.PUBLIC_URL + "/images/Design.jpg"}
               target="_blank"
               title="See Full Image"
               rel="noopener noreferrer"
             >
               <img
-                src={process.env.PUBLIC_URL + "images/Design.jpg"}
+                src={process.env.PUBLIC_URL + "/images/Design.jpg"}
                 alt="designToFollow"
                 className="img-responsive"
               />
