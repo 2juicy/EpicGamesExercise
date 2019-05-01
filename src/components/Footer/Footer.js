@@ -29,7 +29,7 @@ function Footer({ footer, copyright }) {
         </ul>
       </div>
       <p id="copyright">
-        <span class="glyphicon glyphicon-copyright-mark" />
+        <span className="glyphicon glyphicon-copyright-mark" />
         {" " + copyright}
       </p>
     </React.Fragment>

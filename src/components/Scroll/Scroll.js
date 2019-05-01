@@ -21,13 +21,13 @@ export default function Scroll({ height }) {
     <React.Fragment>
       <Menu>
         <a id="home" className="menu-item" href="/">
-          Home
+          <span className="glyphicon glyphicon-home" /> Home
         </a>
         <a id="landing" className="menu-item" href="/landing">
-          Landing
+          <span className="glyphicon glyphicon-road" /> Landing
         </a>
         <a id="bliss" className="menu-item" href="/bliss">
-          Bliss
+          <span className="glyphicon glyphicon-picture" /> Bliss
         </a>
       </Menu>
       <div className="scrollbar" style={{ height }}>
@@ -41,7 +41,7 @@ export default function Scroll({ height }) {
           >
             PAINT YOUR PICTURE
           </p>
-          <span class="glyphicon glyphicon-chevron-up" />
+          <span className="glyphicon glyphicon-chevron-up" />
         </div>
       </div>
     </React.Fragment>

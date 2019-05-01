@@ -104,6 +104,17 @@ Note: Beware of modifying this element as it can break the animations - you shou
   display: inline-block;
 }
 
+.bm-item:hover {
+  color: red;
+}
+
+a:active,
+a:hover,
+a:focus {
+  outline: 0;
+  text-decoration: none;
+}
+
 /* Styling of overlay */
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);

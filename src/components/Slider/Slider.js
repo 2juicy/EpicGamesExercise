@@ -5,8 +5,8 @@ export default function Slider(props) {
   return (
     <div className="slider-wrapper">
       <h4>
-        <span class="glyphicon glyphicon-menu-left" />
-        <span class="glyphicon glyphicon-menu-right" />
+        <span className="glyphicon glyphicon-menu-left" />
+        <span className="glyphicon glyphicon-menu-right" />
         <span className="slider-title">{props.image.navText}</span>
       </h4>
 
@@ -28,9 +28,9 @@ export default function Slider(props) {
               <br />
             </div>
             <div className="bottom-content">
-              <span class="glyphicon glyphicon-comment" />
+              <span className="glyphicon glyphicon-comment" />
               <span> 374 comments</span>
-              <span class="glyphicon glyphicon-option-horizontal" />
+              <span className="glyphicon glyphicon-option-horizontal" />
             </div>
           </div>
         ))}
