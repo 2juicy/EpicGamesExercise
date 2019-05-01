@@ -4,7 +4,7 @@ import "./Paragraph.css";
 export default function Paragraph({ paragraph }) {
   return (
     <div className="wrapper">
-      <div className="paragraph-section">
+      <div className="sidebar-section">
         <p className="sideways">
           <span>29TH</span>JANUARY 2019
         </p>

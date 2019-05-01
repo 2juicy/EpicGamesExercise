@@ -6,6 +6,7 @@ import Slider from "../../components/Slider/Slider";
 import Paragraph from "../../components/Paragraph/Paragraph";
 import Footer from "../../components/Footer/Footer";
 import "./Landing.css";
+import Articles from "../../components/Articles/Articles.js";
 
 export default function Landing() {
   useEffect(() => {
@@ -31,6 +32,7 @@ export default function Landing() {
       <Slider image={content.slider1} />
       <Paragraph paragraph={content.slider1} />
       <Slider image={content.slider2} />
+      <Articles columns={content.slider2.columns} />
       <Footer
         footer={content.footer.options}
         copyright={content.footer.copyright}
