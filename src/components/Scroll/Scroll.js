@@ -26,8 +26,8 @@ export default function Scroll({ height }) {
         <a id="landing" className="menu-item" href="/landing">
           <span className="glyphicon glyphicon-road" /> Landing
         </a>
-        <a id="bliss" className="menu-item" href="/bliss">
-          <span className="glyphicon glyphicon-picture" /> Bliss
+        <a id="bliss" className="menu-item" href="/subpage">
+          <span className="glyphicon glyphicon-picture" /> Subpage
         </a>
       </Menu>
       <div className="scrollbar" style={{ height }}>

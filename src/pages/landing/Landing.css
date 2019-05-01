@@ -2,6 +2,10 @@
   background: rgb(51, 27, 58);
 }
 
+.subpage {
+  background: rgb(51, 27, 58);
+}
+
 .loading {
   position: fixed;
   top: 50%;

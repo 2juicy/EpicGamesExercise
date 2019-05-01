@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Home from "./pages/home/Home";
 import Landing from "./pages/landing/Landing";
-import Bliss from "./pages/bliss/Bliss";
+import Subpage from "./pages/subpage/Subpage";
 import { Switch, Route } from "react-router";
 
 class App extends Component {
@@ -22,7 +22,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/landing" component={Landing} />
-            <Route exact path="/bliss" component={Bliss} />
+            <Route exact path="/subpage" component={Subpage} />
           </Switch>
         </div>
       </div>

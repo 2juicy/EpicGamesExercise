@@ -4,9 +4,8 @@ import Scroll from "../../components/Scroll/Scroll";
 import Article from "../../components/Article/Article";
 import Signature from "../../components/Signature/Signature";
 import Footer from "../../components/Footer/Footer";
-import "./Bliss.css";
 
-export default function Bliss() {
+export default function Subpage() {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -24,7 +23,7 @@ export default function Bliss() {
     setHeight(Math.max(document.documentElement.clientHeight));
 
   return (
-    <div className="bliss">
+    <div className="subpage">
       <Scroll height={height} />
       <Article height={height * 0.85} />
       <Signature signature={content.signature[0]} height={height} />
