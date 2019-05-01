@@ -14,8 +14,6 @@ class App extends Component {
   }
 
   render() {
-    if (this.loading) return null;
-
     return (
       <div className="App">
         <div className="app-container">
