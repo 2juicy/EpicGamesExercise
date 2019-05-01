@@ -23,13 +23,13 @@ export default function Navbar({ height }) {
   return (
     <React.Fragment>
       <Menu>
-        <NavLink className="menu-item active" exact to="/">
+        <NavLink activeClassName="active" exact to="/">
           <span className="glyphicon glyphicon-home" /> Home
         </NavLink>
-        <NavLink className="menu-item active" to="/landing">
+        <NavLink activeClassName="active" to="/landing">
           <span className="glyphicon glyphicon-road" /> Landing
         </NavLink>
-        <NavLink className="menu-item active" to="/subpage">
+        <NavLink activeClassName="active" to="/subpage">
           <span className="glyphicon glyphicon-picture" /> Subpage
         </NavLink>
       </Menu>
