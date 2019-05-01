@@ -9,7 +9,7 @@ export default function Columns({ columns }) {
           <span>29TH</span>JANUARY 2019
         </p>
       </div>
-      <div className="articles">
+      <div className="columns">
         {columns.map(column => (
           <div key={column.id}>
             <h3>{column.title}</h3>

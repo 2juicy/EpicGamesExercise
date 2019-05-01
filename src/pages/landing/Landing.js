@@ -4,7 +4,7 @@ import Navbar from "../../components/Navbar/Navbar";
 import Intro from "../../components/Intro/Intro";
 import Slider from "../../components/Slider/Slider";
 import Paragraph from "../../components/Paragraph/Paragraph";
-import Articles from "../../components/Articles/Articles.js";
+import Columns from "../../components/Columns/Columns.js";
 import Signature from "../../components/Signature/Signature";
 import Footer from "../../components/Footer/Footer";
 import "./Landing.css";
@@ -33,7 +33,7 @@ export default function Landing() {
       <Slider image={content.slider1} />
       <Paragraph paragraph={content.slider1} />
       <Slider image={content.slider2} />
-      <Articles columns={content.slider2.columns} />
+      <Columns columns={content.slider2.columns} />
       <Signature signature={content.signature[0]} height={height} />
       <Footer
         footer={content.footer.options}

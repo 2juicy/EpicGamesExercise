@@ -1,4 +1,4 @@
-.articles {
+.columns {
   color: white;
   display: inline-grid;
   grid-gap: 3%;
@@ -6,12 +6,12 @@
   margin: 0 10% 0 15%;
 }
 
-.articles h3 {
+.columns h3 {
   font-weight: bold;
 }
 
 @media (max-width: 767px) {
-  .articles {
+  .columns {
     grid-template-columns: repeat(2, 1fr);
     margin-right: 0px;
   }
