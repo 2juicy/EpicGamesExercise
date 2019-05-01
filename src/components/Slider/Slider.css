@@ -29,7 +29,6 @@
 .slider {
   display: flex;
   flex-direction: column;
-  background-color: white;
 }
 
 .cut-image {
@@ -62,8 +61,23 @@
 }
 
 .slider-description {
-  margin: 0 5px 0 2em;
+  position: relative;
+  background-color: white;
+  padding: 0 5px 0 2em;
   color: black;
+}
+
+.slider-description::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0px;
+  width: 0px;
+  border-left: 10px solid rgb(51, 27, 58);
+  border-top: 10px solid rgb(51, 27, 58);
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid transparent;
 }
 
 .slider-description h2 {
