@@ -8,6 +8,19 @@
   border: rgba(51, 27, 58) 0.5px ridge;
 }
 
+.article::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0px;
+  width: 0px;
+  border-left: 10px solid rgb(51, 27, 58);
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid rgb(51, 27, 58);
+  border-right: 10px solid transparent;
+}
+
 .article,
 .article-paragraph {
   margin-left: 5%;
@@ -23,12 +36,24 @@
 
 .article-text h3 {
   font-weight: bold;
-  font-size: 36px;
+  font-size: 40px;
 }
 
 .article-paragraph {
-  padding: 40px 5% 40px 5%;
+  position: relative;
+  padding: 50px 5% 40px 5%;
   background-color: white;
+}
+
+.article-paragraph::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-left: 10px solid rgb(51, 27, 58);
+  border-top: 10px solid rgb(51, 27, 58);
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid transparent;
 }
 
 .article-paragraph p:first-child {
@@ -44,5 +69,9 @@
   .article,
   .article-paragraph {
     margin-left: 50px;
+  }
+
+  .article-text {
+    width: 50%;
   }
 }
