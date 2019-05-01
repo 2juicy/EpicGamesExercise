@@ -17,7 +17,7 @@ export default function Slider(props) {
               <img
                 className="slider-image"
                 alt={slide.title}
-                src={`/images/assets/${slide.image}`}
+                src={process.env.PUBLIC_URL + `/images/assets/${slide.image}`}
               />
               <div className="cut-img-text">❤︎ 382</div>
             </div>

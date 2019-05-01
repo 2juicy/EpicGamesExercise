@@ -6,7 +6,9 @@ export default function Article({ height }) {
     <React.Fragment>
       <div
         style={{
-          backgroundImage: `url(/images/assets/background3.jpg)`,
+          backgroundImage: `url(${
+            process.env.PUBLIC_URL
+          }/images/assets/background3.jpg)`,
           height: height
         }}
         className="article"
