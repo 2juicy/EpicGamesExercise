@@ -90,11 +90,12 @@
 .glyphicon-option-horizontal {
   float: right;
   font-weight: bold;
-  margin-right: 5%;
+  margin: 5px 5% 0 0;
 }
 
 .bottom-content {
   background-color: white;
+  border-top: gray 1px solid;
   color: black;
   padding: 0 0 5px 5%;
 }
