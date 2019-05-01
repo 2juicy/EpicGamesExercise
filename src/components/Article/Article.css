@@ -1,0 +1,31 @@
+.article {
+  color: white;
+}
+
+.article,
+.article-paragraph {
+  margin-left: 5%;
+}
+
+.article-text {
+  width: 35%;
+}
+
+.article-text h3 {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.article-paragraph {
+  padding: 40px 5% 40px 5%;
+  background-color: white;
+}
+
+.article-paragraph p:first-child {
+  border-top: solid 5px rgba(51, 27, 58);
+  padding-top: 25px;
+  margin: 0;
+}
+.article-paragraph p {
+  margin-top: 20px;
+}
