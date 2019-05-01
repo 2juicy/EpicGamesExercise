@@ -5,6 +5,7 @@ import Subpage from "./pages/subpage/Subpage";
 import { Switch, Route } from "react-router";
 
 class App extends Component {
+  // This code block is not necessary yet unless I need to make API fetch requests
   state = {
     loading: true
   };
@@ -12,8 +13,10 @@ class App extends Component {
   componentDidMount() {
     this.setState({ loading: false });
   }
-
+  // ==================================================================================== //
   render() {
+    if (this.loading) return null;
+
     return (
       <div className="App">
         <div className="app-container">
