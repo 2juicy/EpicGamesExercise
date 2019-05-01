@@ -3,6 +3,7 @@ import content from "../../content.json";
 import Scroll from "../../components/Scroll/Scroll";
 import Signature from "../../components/Signature/Signature";
 import Footer from "../../components/Footer/Footer";
+import "./Bliss.css";
 
 export default function Bliss() {
   useEffect(() => {

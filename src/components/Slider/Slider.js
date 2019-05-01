@@ -26,11 +26,11 @@ export default function Slider(props) {
               <h2>{slide.title}</h2>
               <p>{slide.description}</p>
               <br />
-              <p>
-                <span class="glyphicon glyphicon-comment" />
-                <span> 374 Comments</span>
-                <span class="glyphicon glyphicon-option-horizontal" />
-              </p>
+            </div>
+            <div className="bottom-content">
+              <span class="glyphicon glyphicon-comment" />
+              <span> 374 comments</span>
+              <span class="glyphicon glyphicon-option-horizontal" />
             </div>
           </div>
         ))}

@@ -22,12 +22,14 @@
   margin-top: 3%;
   display: inline-grid;
   grid-template-columns: repeat(4, 1fr);
+
   grid-gap: 5px;
   margin-bottom: 50px;
 }
 
 .slider {
   display: flex;
+
   flex-direction: column;
 }
 
@@ -61,6 +63,7 @@
 }
 
 .slider-description {
+  flex: 1 0 auto;
   position: relative;
   background-color: white;
   padding: 0 5px 0 2em;
@@ -72,8 +75,6 @@
   position: absolute;
   top: 0;
   left: 0;
-  height: 0px;
-  width: 0px;
   border-left: 10px solid rgb(51, 27, 58);
   border-top: 10px solid rgb(51, 27, 58);
   border-bottom: 10px solid transparent;
@@ -86,14 +87,25 @@
   font-size: 20px;
 }
 
-.slider-description p {
-  font-size: 14px;
-}
-
 .glyphicon-option-horizontal {
   float: right;
   font-weight: bold;
   margin-right: 5%;
+}
+
+.bottom-content {
+  background-color: white;
+  color: black;
+  padding: 0 0 5px 5%;
+}
+
+.bottom-content span {
+  font-size: 14px;
+}
+
+.glyphicon-comment {
+  font-size: 12px !important;
+  color: gray;
 }
 
 @media (max-width: 1023px) {
