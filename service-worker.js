@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.0/workbox-sw.js");
 
 importScripts(
-  "/EpicGamesExercise/precache-manifest.4f2e695390ebdb743fcc2c77f5f22a95.js"
+  "/EpicGamesExercise/precache-manifest.d71d068cdf6b8cfc417d40791cc22688.js"
 );
 
 self.addEventListener('message', (event) => {
