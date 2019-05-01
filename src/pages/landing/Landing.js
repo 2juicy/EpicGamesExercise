@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import content from "../../content.json";
-import Scroll from "../../components/Scroll/Scroll";
+import Navbar from "../../components/Navbar/Navbar";
 import Intro from "../../components/Intro/Intro";
 import Slider from "../../components/Slider/Slider";
 import Paragraph from "../../components/Paragraph/Paragraph";
@@ -28,7 +28,7 @@ export default function Landing() {
 
   return (
     <div className="landing">
-      <Scroll height={height} />
+      <Navbar height={height} />
       <Intro image={content.intro.header[0]} height={height} />
       <Slider image={content.slider1} />
       <Paragraph paragraph={content.slider1} />

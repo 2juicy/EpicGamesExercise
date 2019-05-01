@@ -1,7 +1,7 @@
 import React from "react";
-import "./Articles.css";
+import "./Columns.css";
 
-export default function Articles({ columns }) {
+export default function Columns({ columns }) {
   return (
     <div className="wrapper">
       <div className="sidebar-section">

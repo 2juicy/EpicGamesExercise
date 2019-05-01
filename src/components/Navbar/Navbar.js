@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import { slide as Menu } from "react-burger-menu";
-import "./Scroll.css";
+import "./Navbar.css";
 
-export default function Scroll({ height }) {
+export default function Navbar({ height }) {
   const [opacity, setOpacity] = useState(1);
 
-  // Scroll waypoints to hide elements and animations. Could add more later
+  // Scroll waypoints to hide elements and animations.
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -14,7 +14,9 @@ export default function Scroll({ height }) {
   function handleScroll() {
     if (window.pageYOffset > 1) {
       setOpacity(0);
-    } else setOpacity(1);
+    } else if (window.pageYOffset <= 1) {
+      setOpacity(1);
+    }
   }
 
   return (
@@ -30,7 +32,7 @@ export default function Scroll({ height }) {
           <span className="glyphicon glyphicon-picture" /> Subpage
         </a>
       </Menu>
-      <div className="scrollbar" style={{ height }}>
+      <div className="navbar" style={{ height }}>
         <div className="scroll-text" style={{ opacity }}>
           <p
             onClick={() =>

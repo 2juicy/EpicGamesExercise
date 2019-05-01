@@ -1,4 +1,4 @@
-.scrollbar {
+.navbar {
   z-index: 1;
   width: 5%;
   float: left;
@@ -127,7 +127,7 @@ a:focus {
     top: 2%;
     left: 10px;
   }
-  .scrollbar {
+  .navbar {
     width: 50px;
   }
 }

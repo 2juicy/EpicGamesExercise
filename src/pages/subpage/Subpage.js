@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import content from "../../content.json";
-import Scroll from "../../components/Scroll/Scroll";
+import Navbar from "../../components/Navbar/Navbar";
 import Article from "../../components/Article/Article";
 import Signature from "../../components/Signature/Signature";
 import Footer from "../../components/Footer/Footer";
@@ -24,7 +24,7 @@ export default function Subpage() {
 
   return (
     <div className="subpage">
-      <Scroll height={height} />
+      <Navbar height={height} />
       <Article height={height * 0.85} />
       <Signature signature={content.signature[0]} height={height} />
       <Footer
