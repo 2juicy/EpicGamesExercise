@@ -33,3 +33,9 @@
 .paragraph {
   margin-bottom: 14px;
 }
+
+@media (max-width: 767px) {
+  .paragraphs {
+    margin-right: 0px;
+  }
+}
