@@ -2,7 +2,6 @@ import React from "react";
 import "./Signature.css";
 
 export default function Signature({ signature }) {
-  console.log(signature);
   return (
     <div
       style={{

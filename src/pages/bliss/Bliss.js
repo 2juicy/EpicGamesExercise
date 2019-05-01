@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import content from "../../content.json";
 import Scroll from "../../components/Scroll/Scroll";
+import Signature from "../../components/Signature/Signature";
 import Footer from "../../components/Footer/Footer";
 
 export default function Bliss() {
@@ -23,6 +24,7 @@ export default function Bliss() {
   return (
     <div className="bliss">
       <Scroll height={height} />
+      <Signature signature={content.signature[0]} height={height} />
       <Footer
         footer={content.footer.options}
         copyright={content.footer.copyright}
