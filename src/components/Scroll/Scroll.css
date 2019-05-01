@@ -11,6 +11,14 @@
   -webkit-transition: opacity 1s ease-in;
 }
 
+.scroll-text p {
+  cursor: pointer;
+}
+
+.scroll-text span {
+  pointer-events: none;
+}
+
 .scroll-text p,
 .scroll-text span {
   color: white;
