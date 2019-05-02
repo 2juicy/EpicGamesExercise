@@ -15,7 +15,7 @@ class App extends Component {
             render={({ location }) => (
               <TransitionGroup>
                 <CSSTransition
-                  key={location.key}
+                  key={location.pathname}
                   timeout={400}
                   classNames="fade"
                 >
