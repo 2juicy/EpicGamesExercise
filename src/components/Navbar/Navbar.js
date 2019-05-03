@@ -5,6 +5,7 @@ import "./Navbar.css";
 
 export default function Navbar({ height }) {
   const [opacity, setOpacity] = useState(1);
+  const [pointerEvents, setPointerEvents] = useState("auto");
 
   // Scroll waypoints to hide elements
   useEffect(() => {
@@ -15,8 +16,10 @@ export default function Navbar({ height }) {
   function handleScroll() {
     if (window.pageYOffset > 1) {
       setOpacity(0);
+      setPointerEvents("none");
     } else if (window.pageYOffset <= 1) {
       setOpacity(1);
+      setPointerEvents("auto");
     }
   }
 
@@ -34,7 +37,7 @@ export default function Navbar({ height }) {
         </Link>
       </Menu>
       <div className="navbar" style={{ height }}>
-        <div className="scroll-text" style={{ opacity }}>
+        <div className="scroll-text" style={{ opacity, pointerEvents }}>
           <p
             onClick={() =>
               document
