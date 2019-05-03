@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { slide as Menu } from "react-burger-menu";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
 export default function Navbar({ height }) {
@@ -26,15 +26,15 @@ export default function Navbar({ height }) {
   return (
     <React.Fragment>
       <Menu>
-        <Link activeClassName="active" exact to="/">
+        <NavLink activeClassName="active" exact to="/">
           <span className="glyphicon glyphicon-home" /> Home
-        </Link>
-        <Link activeClassName="active" to="/landing">
+        </NavLink>
+        <NavLink activeClassName="active" to="/landing">
           <span className="glyphicon glyphicon-road" /> Landing
-        </Link>
-        <Link activeClassName="active" to="/subpage">
+        </NavLink>
+        <NavLink activeClassName="active" to="/subpage">
           <span className="glyphicon glyphicon-picture" /> Subpage
-        </Link>
+        </NavLink>
       </Menu>
       <div className="navbar" style={{ height }}>
         <div className="scroll-text" style={{ opacity, pointerEvents }}>
