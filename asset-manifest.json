@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/EpicGamesExercise/static/css/main.10bd5b82.chunk.css",
-    "main.js": "/EpicGamesExercise/static/js/main.84dfc60f.chunk.js",
-    "main.js.map": "/EpicGamesExercise/static/js/main.84dfc60f.chunk.js.map",
+    "main.css": "/EpicGamesExercise/static/css/main.d4f81800.chunk.css",
+    "main.js": "/EpicGamesExercise/static/js/main.02714c1f.chunk.js",
+    "main.js.map": "/EpicGamesExercise/static/js/main.02714c1f.chunk.js.map",
     "runtime~main.js": "/EpicGamesExercise/static/js/runtime~main.2f239cc2.js",
     "runtime~main.js.map": "/EpicGamesExercise/static/js/runtime~main.2f239cc2.js.map",
     "static/css/2.0a305492.chunk.css": "/EpicGamesExercise/static/css/2.0a305492.chunk.css",
-    "static/js/2.51b9ba1a.chunk.js": "/EpicGamesExercise/static/js/2.51b9ba1a.chunk.js",
-    "static/js/2.51b9ba1a.chunk.js.map": "/EpicGamesExercise/static/js/2.51b9ba1a.chunk.js.map",
+    "static/js/2.6940d99d.chunk.js": "/EpicGamesExercise/static/js/2.6940d99d.chunk.js",
+    "static/js/2.6940d99d.chunk.js.map": "/EpicGamesExercise/static/js/2.6940d99d.chunk.js.map",
     "index.html": "/EpicGamesExercise/index.html",
-    "precache-manifest.7a4c507c2b3740c9cf1f7f9a6354bfbf.js": "/EpicGamesExercise/precache-manifest.7a4c507c2b3740c9cf1f7f9a6354bfbf.js",
+    "precache-manifest.c95c2e504cc177502ef9f81a2c52f534.js": "/EpicGamesExercise/precache-manifest.c95c2e504cc177502ef9f81a2c52f534.js",
     "service-worker.js": "/EpicGamesExercise/service-worker.js",
     "static/css/2.0a305492.chunk.css.map": "/EpicGamesExercise/static/css/2.0a305492.chunk.css.map",
-    "static/css/main.10bd5b82.chunk.css.map": "/EpicGamesExercise/static/css/main.10bd5b82.chunk.css.map",
+    "static/css/main.d4f81800.chunk.css.map": "/EpicGamesExercise/static/css/main.d4f81800.chunk.css.map",
     "static/media/bootstrap.min.css": "/EpicGamesExercise/static/media/glyphicons-halflings-regular.fa277232.woff"
   }
 }

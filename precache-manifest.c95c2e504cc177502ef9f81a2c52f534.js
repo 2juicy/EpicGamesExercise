@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "439f77028ae64692ec992aaeb39d91ff",
+    "revision": "6ebc5984a0bbf411fc0d51827375e416",
     "url": "/EpicGamesExercise/index.html"
   },
   {
-    "revision": "0da60f2a589e86ec1485",
+    "revision": "500f9e38fa33cb56aba2",
     "url": "/EpicGamesExercise/static/css/2.0a305492.chunk.css"
   },
   {
-    "revision": "dbfc392bad0e3b49a613",
-    "url": "/EpicGamesExercise/static/css/main.10bd5b82.chunk.css"
+    "revision": "e4820dfaed7d7c46080b",
+    "url": "/EpicGamesExercise/static/css/main.d4f81800.chunk.css"
   },
   {
-    "revision": "0da60f2a589e86ec1485",
-    "url": "/EpicGamesExercise/static/js/2.51b9ba1a.chunk.js"
+    "revision": "500f9e38fa33cb56aba2",
+    "url": "/EpicGamesExercise/static/js/2.6940d99d.chunk.js"
   },
   {
-    "revision": "dbfc392bad0e3b49a613",
-    "url": "/EpicGamesExercise/static/js/main.84dfc60f.chunk.js"
+    "revision": "e4820dfaed7d7c46080b",
+    "url": "/EpicGamesExercise/static/js/main.02714c1f.chunk.js"
   },
   {
     "revision": "8bd966aff520068d9163",
