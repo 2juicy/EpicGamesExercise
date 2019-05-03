@@ -1,6 +1,6 @@
 .intro {
   position: relative;
-  margin: 0 0 4% 5%;
+  margin: 0 0 4% 60px;
   background-position: center center;
   background-attachment: fixed;
   background-size: cover;
@@ -20,8 +20,8 @@
 .intro-text {
   position: absolute;
   width: 30%;
-  bottom: 0;
-  left: 10%;
+  bottom: 2%;
+  left: 5%;
 }
 
 .intro-text h3 {
@@ -39,7 +39,7 @@
   right: 5%;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   .intro {
     margin-left: 50px;
   }

@@ -1,6 +1,6 @@
 .navbar {
   z-index: 1;
-  width: 5%;
+  width: 60px;
   float: left;
   position: relative;
 }
@@ -40,10 +40,11 @@
 /* Position and sizing of burger button */
 .bm-burger-button {
   position: fixed;
-  width: 2.5%;
-  height: 4%;
-  left: 1.3%;
-  top: 4%;
+  width: 40px;
+  height: 34px;
+  left: 10px;
+  top: 10px;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 /* Color/shape of burger icon bars */
@@ -124,8 +125,8 @@ a:focus {
 @media (max-width: 1023px) {
   .bm-burger-button {
     width: 30px;
-    height: 3%;
-    top: 2%;
+    height: 30px;
+    top: 10px;
     left: 10px;
   }
   .navbar {

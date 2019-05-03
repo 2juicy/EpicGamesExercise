@@ -7,7 +7,7 @@
 .sidebar-section {
   position: relative;
   margin: 0;
-  width: 5%;
+  width: 60px;
 }
 
 .sideways {
@@ -26,15 +26,15 @@
 .paragraphs {
   color: white;
   column-count: 2;
-  column-gap: 4em;
-  margin: 0 15% 0 15%;
+  column-gap: 2em;
+  margin: 0 60px 0 60px;
 }
 
 .paragraph {
   margin-bottom: 14px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .paragraphs {
     margin-right: 0px;
   }
