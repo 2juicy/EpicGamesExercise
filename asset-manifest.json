@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/EpicGamesExercise/static/css/main.d4f81800.chunk.css",
+    "main.css": "/EpicGamesExercise/static/css/main.73c0f395.chunk.css",
     "main.js": "/EpicGamesExercise/static/js/main.02714c1f.chunk.js",
     "main.js.map": "/EpicGamesExercise/static/js/main.02714c1f.chunk.js.map",
     "runtime~main.js": "/EpicGamesExercise/static/js/runtime~main.2f239cc2.js",
@@ -9,10 +9,10 @@
     "static/js/2.6940d99d.chunk.js": "/EpicGamesExercise/static/js/2.6940d99d.chunk.js",
     "static/js/2.6940d99d.chunk.js.map": "/EpicGamesExercise/static/js/2.6940d99d.chunk.js.map",
     "index.html": "/EpicGamesExercise/index.html",
-    "precache-manifest.c95c2e504cc177502ef9f81a2c52f534.js": "/EpicGamesExercise/precache-manifest.c95c2e504cc177502ef9f81a2c52f534.js",
+    "precache-manifest.2e5cce03d8a9f91a2a9611811e85400e.js": "/EpicGamesExercise/precache-manifest.2e5cce03d8a9f91a2a9611811e85400e.js",
     "service-worker.js": "/EpicGamesExercise/service-worker.js",
     "static/css/2.0a305492.chunk.css.map": "/EpicGamesExercise/static/css/2.0a305492.chunk.css.map",
-    "static/css/main.d4f81800.chunk.css.map": "/EpicGamesExercise/static/css/main.d4f81800.chunk.css.map",
+    "static/css/main.73c0f395.chunk.css.map": "/EpicGamesExercise/static/css/main.73c0f395.chunk.css.map",
     "static/media/bootstrap.min.css": "/EpicGamesExercise/static/media/glyphicons-halflings-regular.fa277232.woff"
   }
 }
