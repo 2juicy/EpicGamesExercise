@@ -6,11 +6,15 @@ function Footer({ footer, copyright }) {
     <React.Fragment>
       <div id="footer">
         <ul className="li-no-style aboutme">
-          <h4>{footer[0].id}</h4>
+          <li>
+            <h4>{footer[0].id}</h4>
+          </li>
           <li>{footer[0].text[0].description}</li>
         </ul>
         <ul className="li-no-style">
-          <h4>{footer[1].id}</h4>
+          <li>
+            <h4>{footer[1].id}</h4>
+          </li>
           {footer[1].text.map(text => (
             <React.Fragment key={text.id}>
               <li>{text.description}</li>
@@ -19,7 +23,9 @@ function Footer({ footer, copyright }) {
           ))}
         </ul>
         <ul className="li-no-style">
-          <h4>{footer[2].id}</h4>
+          <li>
+            <h4>{footer[2].id}</h4>
+          </li>
           {footer[2].text.map(text => (
             <React.Fragment key={text.id}>
               <li>{text.description}</li>
