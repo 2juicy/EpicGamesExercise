@@ -1,0 +1,46 @@
+.App
+
+    .page
+      position: absolute
+      left: 0
+      right: 0
+    
+    .fade-appear,
+    .fade-enter 
+      opacity: 0
+      z-index: 1
+    
+    .fade-appear-active,
+    .fade-enter.fade-enter-active 
+      opacity: 1
+      transition: opacity 300ms linear 150ms
+    
+    .fade-exit 
+      opacity: 1
+    
+    .fade-exit.fade-exit-active 
+      opacity: 0
+      transition: opacity 150ms linear
+
+    .App-logo
+        height: 80px
+
+    .App-header
+        background-color: #222
+        padding: 2em
+        color: white
+
+    .App-intro
+        margin: 2em 0
+        .design
+            img
+                margin: 1em auto 0
+        ul
+            li
+                margin: 0.5em 0
+    a.btn
+        text-transform: uppercase
+        padding: 1em 2em
+        margin: 1em 0
+        display: inline-block
+        transition: all 0.2s ease-in-out

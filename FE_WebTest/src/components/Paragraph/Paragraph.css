@@ -1,0 +1,41 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 75px;
+}
+
+.sidebar-section {
+  position: relative;
+  margin: 0;
+  width: 60px;
+}
+
+.sideways {
+  color: white;
+  height: 150px;
+  position: absolute;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  left: 50%;
+  transform: translateX(-50%) rotate(180deg);
+}
+
+.sideways span {
+  color: darkblue;
+}
+.paragraphs {
+  color: white;
+  column-count: 2;
+  column-gap: 2em;
+  margin: 0 60px 0 60px;
+}
+
+.paragraph {
+  margin-bottom: 14px;
+}
+
+@media (max-width: 1023px) {
+  .paragraphs {
+    margin-right: 0px;
+  }
+}
