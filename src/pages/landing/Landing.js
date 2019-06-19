@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import content from "../../content.json";
 import Navbar from "../../components/Navbar/Navbar";
 import Intro from "../../components/Intro/Intro";
@@ -14,27 +14,27 @@ export default function Landing() {
     window.scrollTo(0, 0);
   }, []);
 
-  const [height, setHeight] = useState(
-    Math.max(document.documentElement.clientHeight)
-  );
+  // const [height, setHeight] = useState(
+  //   Math.max(document.documentElement.clientHeight)
+  // );
 
-  useEffect(() => {
-    const resizeListener = window.addEventListener("resize", resizeLanding);
-    return () => window.removeEventListener("resize", resizeListener);
-  });
+  // useEffect(() => {
+  //   const resizeListener = window.addEventListener("resize", resizeLanding);
+  //   return () => window.removeEventListener("resize", resizeListener);
+  // });
 
-  const resizeLanding = () =>
-    setHeight(Math.max(document.documentElement.clientHeight));
+  // const resizeLanding = () =>
+  //   setHeight(Math.max(document.documentElement.clientHeight));
 
   return (
     <div className="landing page">
-      <Navbar height={height} />
-      <Intro image={content.intro.header[0]} height={height} />
+      <Navbar />
+      <Intro image={content.intro.header[0]} />
       <Slider image={content.slider1} />
       <Paragraph paragraph={content.slider1} />
       <Slider image={content.slider2} />
       <Columns columns={content.slider2.columns} />
-      <Signature signature={content.signature[0]} height={height} />
+      <Signature signature={content.signature[0]} />
       <Footer
         footer={content.footer.options}
         copyright={content.footer.copyright}

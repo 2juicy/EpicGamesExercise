@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import content from "../../content.json";
 import Navbar from "../../components/Navbar/Navbar";
 import Article from "../../components/Article/Article";
@@ -10,23 +10,23 @@ export default function Subpage() {
     window.scrollTo(0, 0);
   }, []);
 
-  const [height, setHeight] = useState(
-    Math.max(document.documentElement.clientHeight)
-  );
+  // const [height, setHeight] = useState(
+  //   Math.max(document.documentElement.clientHeight)
+  // );
 
-  useEffect(() => {
-    const resizeListener = window.addEventListener("resize", resizeLanding);
-    return () => window.removeEventListener("resize", resizeListener);
-  });
+  // useEffect(() => {
+  //   const resizeListener = window.addEventListener("resize", resizeLanding);
+  //   return () => window.removeEventListener("resize", resizeListener);
+  // });
 
-  const resizeLanding = () =>
-    setHeight(Math.max(document.documentElement.clientHeight));
+  // const resizeLanding = () =>
+  //   setHeight(Math.max(document.documentElement.clientHeight));
 
   return (
     <div className="subpage page">
-      <Navbar height={height} />
-      <Article height={height * 0.85} />
-      <Signature signature={content.signature[0]} height={height} />
+      <Navbar />
+      <Article />
+      <Signature signature={content.signature[0]} />
       <Footer
         footer={content.footer.options}
         copyright={content.footer.copyright}

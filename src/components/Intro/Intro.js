@@ -7,8 +7,7 @@ export default function Intro(props) {
       style={{
         backgroundImage: `url(${process.env.PUBLIC_URL}/images/assets/${
           props.image.backgroundImage
-        })`,
-        height: props.height
+        })`
       }}
       className="intro"
     >

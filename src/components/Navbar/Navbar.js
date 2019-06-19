@@ -3,7 +3,7 @@ import { slide as Menu } from "react-burger-menu";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
 
-export default function Navbar({ height }) {
+export default function Navbar() {
   const [opacity, setOpacity] = useState(1);
   const [pointerEvents, setPointerEvents] = useState("auto");
 
@@ -36,7 +36,7 @@ export default function Navbar({ height }) {
           <span className="glyphicon glyphicon-picture" /> Subpage
         </NavLink>
       </Menu>
-      <div className="navbar" style={{ height }}>
+      <div className="navbar">
         <div className="scroll-text" style={{ opacity, pointerEvents }}>
           <p
             onClick={() =>

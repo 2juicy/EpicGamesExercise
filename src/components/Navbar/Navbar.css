@@ -3,6 +3,7 @@
   width: 60px;
   float: left;
   position: relative;
+  height: 100vh;
 }
 
 .scroll-text {

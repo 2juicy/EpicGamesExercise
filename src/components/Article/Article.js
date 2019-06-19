@@ -1,15 +1,14 @@
 import React from "react";
 import "./Article.css";
 
-export default function Article({ height }) {
+export default function Article() {
   return (
     <React.Fragment>
       <div
         style={{
           backgroundImage: `url(${
             process.env.PUBLIC_URL
-          }/images/assets/background3.jpg)`,
-          height: height
+          }/images/assets/background3.jpg)`
         }}
         className="article"
       >

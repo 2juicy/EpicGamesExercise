@@ -1,4 +1,5 @@
 .article {
+  height: calc(100vh * 0.85);
   color: white;
   position: relative;
   background-position: center center;
