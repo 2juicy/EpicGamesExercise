@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import content from "../../content.json";
 import Navbar from "../../components/Navbar/Navbar";
 import Intro from "../../components/Intro/Intro";
@@ -10,9 +10,18 @@ import Footer from "../../components/Footer/Footer";
 import "./Landing.css";
 
 export default function Landing() {
+  const [loading, setLoading] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1500);
   }, []);
+
+  if (loading) {
+    return <img src="images/loading.gif" class="loading" alt="loading..." />;
+  }
 
   return (
     <div className="landing page">
