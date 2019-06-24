@@ -26,6 +26,7 @@ export default function Landing() {
       setLoading(true);
       let response = await fetch("https://jsonplaceholder.typicode.com/photos");
       let json = await response.json();
+      console.log(json);
       setLoading(false);
     }
     getContent();
