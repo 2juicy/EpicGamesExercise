@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from "react";
-// Without a backend we pull content straight from .json file.
-import content from "../../content.json";
+import React from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Intro from "../../components/Intro/Intro";
 import Slider from "../../components/Slider/Slider";
@@ -10,34 +8,7 @@ import Signature from "../../components/Signature/Signature";
 import Footer from "../../components/Footer/Footer";
 import "./Landing.css";
 
-const loadingStyle = {
-  position: "fixed",
-  top: "50%",
-  left: "50%",
-  transform: "translate(-50%, -50%)"
-};
-
-export default function Landing() {
-  const [loading, setLoading] = useState(false);
-
-  useEffect(() => {
-    // We use jsonplaceholder to imitate an API.
-    async function getContent() {
-      setLoading(true);
-      let response = await fetch("https://jsonplaceholder.typicode.com/photos");
-      let json = await response.json();
-      console.log(json);
-      setLoading(false);
-    }
-    getContent();
-  }, []);
-
-  if (loading) {
-    return (
-      <img src="images/loading.gif" style={loadingStyle} alt="loading..." />
-    );
-  }
-
+export default function Landing({ content }) {
   return (
     <div className="landing page">
       <Navbar />

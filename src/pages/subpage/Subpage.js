@@ -1,11 +1,10 @@
 import React, { useEffect } from "react";
-import content from "../../content.json";
 import Navbar from "../../components/Navbar/Navbar";
 import Article from "../../components/Article/Article";
 import Signature from "../../components/Signature/Signature";
 import Footer from "../../components/Footer/Footer";
 
-export default function Subpage() {
+export default function Subpage({ content }) {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
