@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import content from "./content.json";
 import Home from "./pages/home/Home";
 import Landing from "./pages/landing/Landing";
 import Subpage from "./pages/subpage/Subpage";
@@ -16,18 +15,17 @@ const loadingStyle = {
 
 class App extends Component {
   state = {
+    content: [],
     loading: true
   };
 
-  componentDidMount() {
-    const getContent = async () => {
-      let response = await fetch("https://jsonplaceholder.typicode.com/photos");
-      let json = await response.json();
-      console.log(json);
-      this.setState({ loading: false });
-    };
-    getContent();
+  async componentDidMount() {
+    let response = await fetch("content.json");
+    let json = await response.json();
+    await this.setState({ content: json });
+    await this.setState({ loading: false });
   }
+
   render() {
     if (this.state.loading) {
       return (
@@ -51,12 +49,16 @@ class App extends Component {
                     <Route
                       exact
                       path="/landing"
-                      render={props => <Landing {...props} content={content} />}
+                      render={props => (
+                        <Landing {...props} content={this.state.content} />
+                      )}
                     />
                     <Route
                       exact
                       path="/subpage"
-                      render={props => <Subpage {...props} content={content} />}
+                      render={props => (
+                        <Subpage {...props} content={this.state.content} />
+                      )}
                     />
                   </Switch>
                 </CSSTransition>
