@@ -20,8 +20,8 @@ class App extends Component {
   };
 
   async componentDidMount() {
-    let response = await fetch("content.json");
-    let json = await response.json();
+    const response = await fetch("content.json");
+    const json = await response.json();
     await this.setState({ content: json });
     await this.setState({ loading: false });
   }
