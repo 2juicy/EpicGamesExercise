@@ -24,9 +24,7 @@ class App extends Component {
   async componentDidMount() {
     try {
       const response = await fetch("content.json");
-      if (!response.ok) {
-        throw Error(!response.statusText);
-      }
+      if (!response.ok) throw Error(!response.statusText);
       const json = await response.json();
       this.setState({ content: json });
       this.setState({ loading: false });
@@ -39,7 +37,7 @@ class App extends Component {
   render() {
     if (this.state.loading) {
       return this.state.error ? (
-        <Error css={loadingStyle}>Error with request</Error>
+        <Error css={loadingStyle}>Failed to fetch resource</Error>
       ) : (
         <img src="images/loading.gif" style={loadingStyle} alt="loading..." />
       );
