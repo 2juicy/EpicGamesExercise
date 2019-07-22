@@ -2,9 +2,10 @@ import React, { Component } from "react";
 import Home from "./pages/home/Home";
 import Landing from "./pages/landing/Landing";
 import Subpage from "./pages/subpage/Subpage";
+import Error from "./components/Error/Error";
 import { Switch, Route } from "react-router";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
 import { HashRouter } from "react-router-dom";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 const loadingStyle = {
   position: "fixed",
@@ -38,7 +39,7 @@ class App extends Component {
   render() {
     if (this.state.loading) {
       return this.state.error ? (
-        <h1 style={loadingStyle}>Error with request</h1>
+        <Error css={loadingStyle}>Error with request</Error>
       ) : (
         <img src="images/loading.gif" style={loadingStyle} alt="loading..." />
       );
