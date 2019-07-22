@@ -16,19 +16,30 @@ const loadingStyle = {
 class App extends Component {
   state = {
     content: [],
-    loading: true
+    loading: true,
+    error: false
   };
 
   async componentDidMount() {
-    const response = await fetch("content.json");
-    const json = await response.json();
-    await this.setState({ content: json });
-    await this.setState({ loading: false });
+    try {
+      const response = await fetch("content.json");
+      if (!response.ok) {
+        throw Error(!response.statusText);
+      }
+      const json = await response.json();
+      this.setState({ content: json });
+      this.setState({ loading: false });
+    } catch (err) {
+      this.setState({ error: true });
+      console.error(err);
+    }
   }
 
   render() {
     if (this.state.loading) {
-      return (
+      return this.state.error ? (
+        <h1 style={loadingStyle}>Error with request</h1>
+      ) : (
         <img src="images/loading.gif" style={loadingStyle} alt="loading..." />
       );
     }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../../components/Navbar/Navbar";
 import Intro from "../../components/Intro/Intro";
 import Slider from "../../components/Slider/Slider";
@@ -9,6 +9,10 @@ import Footer from "../../components/Footer/Footer";
 import "./Landing.css";
 
 export default function Landing({ content }) {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="landing page">
       <Navbar />
