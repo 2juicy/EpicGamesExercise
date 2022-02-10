@@ -64,7 +64,7 @@
   },
   "devDependencies": {
     "concurrently": "^3.5.0",
-    "node-sass": ">=4.13.1",
+    "node-sass": ">=7.0.0",
     "sass-loader": "^6.0.6"
   },
   "browserslist": [
